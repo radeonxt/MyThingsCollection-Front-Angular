@@ -1,0 +1,30 @@
+form{
+    text-align:center;  
+}
+
+h1{
+    text-align:center;
+}
+
+.inputs .mat-form-field {
+    margin-left: 20px;
+}
+
+#inputNome,
+#inputGenero,
+#inputProdutora{
+    width:20%;
+}
+
+#inputAno{
+    width:3%;
+}
+
+#inputNota{
+    width:2%;
+}
+
+button{
+    margin-top: 50px;
+    margin-left: 20px;
+}

@@ -1,0 +1,41 @@
+<form>
+    <h1>Novo Jogo</h1>
+
+    <div class="inputs">
+        <p>
+            <mat-form-field id="inputNome" appearance="legacy">
+                <mat-label>Nome</mat-label>
+                <input [(ngModel)] ="jogo.nome" name="Nome" maxlength="100" matInput placeholder="">
+            </mat-form-field>
+
+            <mat-form-field id="inputGenero" appearance="legacy">
+                <mat-label>Gênero</mat-label>
+                <input [(ngModel)] ="jogo.genero" name="Genero" maxlength="50" matInput placeholder="">
+            </mat-form-field>
+        </p>
+
+        <p>
+            <mat-form-field id="inputProdutora" appearance="legacy">
+                <mat-label>Produtora</mat-label>
+                <input [(ngModel)] ="jogo.produtora" name="Produtora" maxlength="50" matInput placeholder="">
+            </mat-form-field>
+        
+
+            <mat-form-field id="inputAno" appearance="legacy">
+                <mat-label>Ano</mat-label>
+                <input [(ngModel)] ="jogo.ano" name="Ano" maxlength="4" matInput placeholder="">
+            </mat-form-field> 
+
+            <mat-form-field id="inputNota" appearance="legacy">
+                <mat-label>Nota</mat-label>
+                <input [(ngModel)] ="jogo.nota" name="Nota" maxlength="2" matInput placeholder="">
+            </mat-form-field>
+        </p>    
+        
+
+        <div class="buttons">
+            <button (click) = "create()" class="mat-elevation-z8" mat-stroked-button color="primary">GRAVAR</button> 
+            <button (click) = "cancel()" class="mat-elevation-z8" mat-stroked-button color="primary">CANCELAR</button> 
+        </div>
+    </div>
+</form>    
